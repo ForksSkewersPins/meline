@@ -45,7 +45,9 @@ Q.members = 0;
 for (var c of Q.islands) {
     Q[c+'_members'] = 0;
     for (var v of Q.classes) {
-        Q[c+'_members'] += Q[v+'_'+c+'_members'];
+        if (Q[v+'_'+c+'_members'] != "null") {
+            Q[c+'_members'] += Q[v+'_'+c+'_members'];
+        }
     }
     Q.members += Q[c+'_members'];
 }
