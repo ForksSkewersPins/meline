@@ -36,6 +36,40 @@ Q.historical_mode = 0;
 Q.members = 100;
 Q.meline_central_members = 100;
 
+Q.meline_central_sympathy = 2;
+Q.meline_central_apathy = 91;
+Q.meline_central_antipathy = 7;
+
+Q.smogtown_sympathy = 0;
+Q.smogtown_apathy = 100;
+Q.smogtown_antipathy = 0;
+
+Q.tchotchke_sympathy = 0;
+Q.tchotchke_apathy = 97;
+Q.tchotchke_antipathy = 3;
+
+Q.myers_sympathy = 1;
+Q.myers_apathy = 99;
+Q.myers_antipathy = 0;
+
+Q.brickton_sympathy = 1;
+Q.brickton_apathy = 97;
+Q.brickton_antipathy = 2;
+
+Q.nilwater_sympathy = 0;
+Q.nilwater_apathy = 98;
+Q.nilwater_antipathy = 2;
+
+Q.manark_sympathy = 0;
+Q.manark_apathy = 91;
+Q.manark_antipathy = 9;
+
+Q.meltjoy_sympathy = 0;
+Q.meltjoy_apathy = 97;
+Q.meltjoy_antipathy = 3;
+
+Q.socialism = 3
+
 Q.jukies_meline_central_members = 2;
 Q.landlubbers_meline_central_members = 18;
 Q.white_collar_meline_central_members = 50;
@@ -52,7 +86,7 @@ Q.white_collar_myers_members = 0;
 Q.blue_collar_myers_members = 0;
 Q.corpo_myers_members = 0;
 Q.police_myers_members = 0;
-Q.petty_bourgeois_myers_members = 9;
+Q.petty_bourgeois_myers_members = 0;
 Q.militants_myers_members = 0;
 Q.cowjukes_myers_members = 0;
 
@@ -62,7 +96,7 @@ Q.white_collar_tchotchke_members = 0;
 Q.blue_collar_tchotchke_members = 0;
 Q.corpo_tchotchke_members = 0;
 Q.police_tchotchke_members = 0;
-Q.petty_bourgeois_tchotchke_members = 9;
+Q.petty_bourgeois_tchotchke_members = 0;
 Q.militants_tchotchke_members = 0;
 Q.cowjukes_tchotchke_members = 0;
 
@@ -72,7 +106,7 @@ Q.white_collar_smogtown_members = 0;
 Q.blue_collar_smogtown_members = 0;
 Q.corpo_smogtown_members = 0;
 Q.police_smogtown_members = 0;
-Q.petty_bourgeois_smogtown_members = 9;
+Q.petty_bourgeois_smogtown_members = 0;
 Q.militants_smogtown_members = 0;
 Q.cowjukes_smogtown_members = 0;
 
@@ -82,7 +116,7 @@ Q.white_collar_brickton_members = 0;
 Q.blue_collar_brickton_members = 0;
 Q.corpo_brickton_members = 0;
 Q.police_brickton_members = 0;
-Q.petty_bourgeois_brickton_members = 9;
+Q.petty_bourgeois_brickton_members = 0;
 Q.militants_brickton_members = 0;
 Q.cowjukes_brickton_members = 0;
 
@@ -92,7 +126,7 @@ Q.white_collar_meltjoy_members = 0;
 Q.blue_collar_meltjoy_members = 0;
 Q.corpo_meltjoy_members = 0;
 Q.police_meltjoy_members = 0;
-Q.petty_bourgeois_meltjoy_members = 9;
+Q.petty_bourgeois_meltjoy_members = 0;
 Q.militants_meltjoy_members = 0;
 Q.cowjukes_meltjoy_members = 0;
 
@@ -102,7 +136,7 @@ Q.white_collar_nilwater_members = 0;
 Q.blue_collar_nilwater_members = 0;
 Q.corpo_nilwater_members = 0;
 Q.police_nilwater_members = 0;
-Q.petty_bourgeois_nilwater_members = 9;
+Q.petty_bourgeois_nilwater_members = 0;
 Q.militants_nilwater_members = 0;
 Q.cowjukes_nilwater_members = 0;
 
@@ -112,7 +146,7 @@ Q.white_collar_manark_members = 0;
 Q.blue_collar_manark_members = 0;
 Q.corpo_manark_members = 0;
 Q.police_manark_members = 0;
-Q.petty_bourgeois_manark_members = 9;
+Q.petty_bourgeois_manark_members = 0;
 Q.militants_manark_members = 0;
 Q.cowjukes_manark_members = 0;
 
