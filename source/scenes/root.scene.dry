@@ -33,6 +33,18 @@ Q.month_actions = 0;
 Q.difficulty = 0;
 Q.historical_mode = 0;
 
+Q.members = 100;
+Q.meline_central_members = 100;
+
+Q.jukies_meline_central_members = 2;
+Q.landlubbers_meline_central_members = 18;
+Q.white_collar_meline_central_members = 50;
+Q.blue_collar_meline_central_members = 15;
+Q.corpo_meline_central_members = 2;
+Q.police_meline_central_members = 3;
+Q.petty_bourgeois_meline_central_members = 9;
+Q.militants_meline_central_members = 1;
+
 // party resources
 Q.resources = 100;
 // party dues

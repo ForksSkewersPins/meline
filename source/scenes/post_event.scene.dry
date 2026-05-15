@@ -37,12 +37,25 @@ if (Q.dissent < 0) {
     Q.dissent = 0.95;
 }
 
+Q.islands = ['meline_central', 'smogtown', 'tchotchke', 'myers', 'brickton', 'nilwater', 'manark', 'meltjoy']
+Q.classes = ['jukies', 'landlubbers', 'white_collar', 'blue_collar', 'cowjukes', 'militants', 'petty_bourgeois', 'corpo', 'police']
+
+Q.members = 0;
+
+for (var c of Q.islands) {
+    Q[c+'_members] = 0;
+    for (var class of Q.classes) {
+        Q[c+'_members] += Q[class+'_'+c+'_members];
+    }
+    Q.members += Q[c+'_members'];
+}
+
 // 1. update dates
 if (Q.month_actions >= 1) {
     Q.time += 1;
     Q.month_actions = 0;
     Q.month += 1;
-    if (Q.month >= 13) {
+    if (Q.month >= 21) {
         Q.month = 1;
         Q.year += 1;
         if (Q.historical_mode) {

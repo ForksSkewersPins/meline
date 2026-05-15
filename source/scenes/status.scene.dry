@@ -12,13 +12,28 @@ Q.economic_growth_2 = '0';
 if (Q.economic_growth) {
     Q.economic_growth_2 = Q.economic_growth.toFixed(1);
 }
+
+Q.resources_2 = (Q.resources/1000);
+Q.resources_2 = Q.resources_2.toFixed(1);
+
+Q.resources_3 = (Q.resources/1000000);
+Q.resources_3 = Q.resources_3.toFixed(1);
+
+Q.members_2 = (Q.members/1000);
+Q.members_2 = Q.members_2.toFixed(1);
+
+Q.members_3 = (Q.members/1000000);
+Q.members_3 = Q.members_3.toFixed(1);
+
 !}
 
 = Status
 
 Month [+ month +] of the Year [+ year +]
 
-Finances: [+ resources +]
+Finances: $[? if resources < 1000 : [+ resources +] ?][? if resources >= 1000 and resources < 1000000 : [+ resources_2 +]k ?][? if resources >= 1000000 : [+ resources_3 +]m ?]
+
+Members: [? if resources < 1000 : [+ resources +] ?][? if resources >= 1000 and resources < 1000000 : [+ resources_2 +]k ?][? if resources >= 1000000 : [+ resources_3 +]m ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
