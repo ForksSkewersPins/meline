@@ -75,7 +75,7 @@ new-page: true
 
 > *"Meline is one of the few planets in the galaxy which can support human life without a need for terraforming. This should have allowed it to blossom freely without needing to depend upon corporations - alas, it was not to be! The anti-monopoly laws set out by the pioneers seem ever so fickle in their absence, and the once hopeful unification of the planet seems now but a front for consolidation. Only an equally consolidated effort of all Melinians behind a socialist party can defend it from reduction to factory-world."*
 
- - Ronald T., *For a Meline Socialist Party*, 3964
+ - Ronald T., *For a Meline Socialist Party*, 3962
 
 Welcome to Meline, a planet beset by corporate exploitation, oppression and hegemony, as with most planets. Meline is unique in being utterly unimportant in the grand scheme of things, and yet still finds itself of acute interest to several megacorporations for its rarity. What will you do?
 
@@ -85,7 +85,7 @@ Welcome to Meline, a planet beset by corporate exploitation, oppression and hege
 @menu
 
 - @1928_main: Begin (normal difficulty)
-- @library: Lore.
+- @codex: Lore.
 
 @1928_main
 new-page: true
@@ -96,3 +96,90 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 It is a dark time for Melinian socialism. The past decade has seen the already minor and inefficient force splinter following the Great Schism, wherein, under the compulsion of the Meline Planetary Government following its unanimous decision, and the enforcement of this compulsion by Meline Central's eager police forces, the party was forced to expel all dissidents and their sympathizers, a fact which deprived the anti-corporate struggle of the unifying banner it could have had.
 
 But, the decade begins anew. Even as Monroe Corporation appears more entrenched than ever, the party retains the opportunity to rectify its mistakes.
+
+@codex
+new-page: true
+go-to: towns
+
+= Meline
+
+Colonized in 3930 and one of the few planets to not require terraforming in order to be so, Meline is a large waterworld, positioned in an unfortunate spot away from any important clusters of stars that might house more eventful bits of humanity. Despite its unimportance, it still managed to attract several megacorporations interested in expanding their profits ever further.
+
+@towns
+
+- @meline_central: Meline Central, the capital.
+- @smogtown: Smogtown, an industrial center.
+- @tchotchke: Tchotchke, a culturally distinct city.
+- @other_towns: ...other towns? Oh yeah. There are some.
+- @socialist_party: Now, the Meline Socialist Party.
+
+@meline_central
+max-visits: 1
+go-to: towns
+on-arrival: codices += 1
+
+Location: Meline Central
+
+The first settlers stepped ground on a grassy plain that by now, is known as Meline Central. A sprawling metropolis with shiny skyscrapers and beautiful monorail systems, this is the city that many corporations and rich, lucky people known as their hometown. Everything that is important happens here, and the rest of the planet revolves around it.
+
+Luckily for us, this is also the town which holds our headquarters, and, as of present, our only presence as a party anywhere on the planet. Every mayoral election, we have made a habit of running in the mayoral races, when we can afford the registration fees that is; sadly, we were unable to enter one last time.
+
+@smogtown
+max-visits: 1
+go-to: towns
+on-arrival: codices += 1
+
+Location: Smogtown
+
+A large island covered in dark, polluted and infertile land with sparse housing laid about. In the center of it all, a sprawling industrial complex, factories hastily constructed atop one another. 
+
+Before the Smogtown pogroms, it had been a fertile ground for the socialist movement to take root, with many of our party's founding members having indeed been participants in the riots. Since, however, it has seen the labour force rapidly automated, with the remaining population cowed into docile corporate subjects by automated defense systems.
+
+@tchotchke
+max-visits: 1
+go-to: towns
+on-arrival: codices += 1
+
+Location: Tchotchke
+
+Known for their medical manufacturing facilities and the extremely vivid, yet perhaps a bit hard to appreciate culture, a result of their colonization by a separate expedition than that which established Meline Central. For a while an independent state, it did not fold into the Meline Planetary Government peacefully, and all of this planet's few genuine wars have revolved around the nation.
+
+To this day, Tchotchkean nationalism persists, though under the stabilization measures of the Government-appointed Governor-General has gradually begun to mellow out into a casual and noncommittal racism rather than violent resistance. Our party has historically failed to breach into the town, due to our support for planetary unity.
+
+@other_towns
+max-visits: 1
+go-to: towns
+on-arrival: codices += 1
+
+Location: Elsewhere
+
+Meline is a sizable planet, and has millions of islands, thousands of which are permanently inhabited. Thus, it has countless small towns. If one were to name some, they would likely name Brickton, Myers, and Nilwater. Both the latter and the former manage to hold relevance for one reason or another, with Brickton bordering on a city in terms of size and Nilwater holding historical relevance as a sight of past contention and conflict with Tchotchke.
+
+The middle one? Yeah, I dunno why they'd mention that one. It really isn't relevant. I've heard the mayor's a nice guy, though.
+
+@socialist_party
+view-if: codices >= 4
+new-page: true
+
+= The Meline Socialist Party
+
+The Meline Socialist Party was formed in 3963 in the aftermath of Fairweather's deployment to suppress the Smogtown riots, and the resultant Smogtown pogroms. It quickly grew, establishing chapters across many of Meline's islands, and rallying against Monroe Corporation's increasing control over the planet's resources. 
+
+These successes, however, were doomed to be short-lived.
+
+- @schism: The Great Schism.
+
+@schism
+new-page: true
+
+= The Great Schism
+
+Organizing the Smogtown riots and resistance to the pogroms, several disaffected rebels coalesced into groups and cells all dedicated to the goal of coordinated dissent against megacorporations - of coordinated **dissidence**. Many in these groups, naturally, found their homes within the Meline Socialist Party, agitating against corporations.
+
+It did not take long for Fairweather LLC to seek the annihilation of those responsible for and supportive of the riots they had so gleefully suppressed on behalf of Monroe Corporation, lobbying the government to crackdown on dissidence, driving some cells fully underground and others still into the Meline Socialist Party. Though at first deemed harmless, as the Meline Socialist Party grew and the more revolutionary flanks within it grew too, a court in Meline Central ruled that the Meline Socialist Party could be classified as a dissident group under law if it did not take adequate measure to purge itself.
+
+Following this ruling, the Meline Socialist Party became squarely split. Following a narrow decision by the central committee, a decision made under duress due to the deployment of police to their headquarters during the meeting, the party instated a ban on factions which would expel all who were members of cells and groups not subordinated to the central committee, effectively purging all dissidents from the organization. In the ensuing schism, multiple branches and chapters declared independence or self-dissolved, while half of the central committee resigned in protest and many members walked out. There was a Meline Communist Party formed from those half who resigned, but it was quickly banned, its leaders jailed on the spot.
+
+Since, the Meline Socialist Party has been reduced to a struggling sect among many. It is hoped that this new millenium will bode better for us.
+
+- @1928_main: Okay, got it.
