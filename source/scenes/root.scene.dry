@@ -80,7 +80,7 @@ new-page: true
 Welcome to Meline, a planet beset by corporate exploitation, oppression and hegemony, as with most planets. Meline is unique in being utterly unimportant in the grand scheme of things, and yet still finds itself of acute interest to several megacorporations for its rarity. What will you do?
 
 - @1928_main: Begin (normal difficulty)
-- @library: Lore.
+- @codex: Lore.
 
 @menu
 
