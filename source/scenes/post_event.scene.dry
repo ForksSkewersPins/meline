@@ -67,6 +67,8 @@ if (Q.month_actions >= 1) {
             Q[timer+'_timer'] -= 1;
         }
     }
+    Q.party_luck = ((Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1));
+    Q.resources += (Q.dues*Q.members*(1+(Q.party_luck/100)));
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};
     // for (var party of Q.parties) {
@@ -76,10 +78,6 @@ if (Q.month_actions >= 1) {
     Q.economic_records.push({'date': new Date(Q.year, Q.month - 1),
                              'inflation': Q.inflation,
                              'unemployment': Q.unemployed});
-
-    
-    Q.party_luck = ((Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1));
-    Q.resources += (Q.dues*Q.members*(1+(Q.party_luck/100)));
     
     }
 
