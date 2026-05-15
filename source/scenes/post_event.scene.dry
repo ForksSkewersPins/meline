@@ -44,8 +44,8 @@ Q.members = 0;
 
 for (var c of Q.islands) {
     Q[c+'_members'] = 0;
-    for (var class of Q.classes) {
-        Q[c+'_members'] += Q[class+'_'+c+'_members'];
+    for (var v of Q.classes) {
+        Q[c+'_members'] += Q[v+'_'+c+'_members'];
     }
     Q.members += Q[c+'_members'];
 }
