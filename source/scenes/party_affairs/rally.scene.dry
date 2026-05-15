@@ -120,7 +120,6 @@ view-if: moderate_plan_adopted = 1 and weimar_rejected != 1 and weimar_plan_adop
 subtitle: We will first need to convince our Weimar partners of the plan's merits.
 unavailable-subtitle: Our Weimar partners are not willing to be convinced of the plan's merits.
 choose-if: weimar_willingness == 1
-go-to: weimar_plan
 
 @weimar_2
 view-if: weimar_plan_adopted = 1
