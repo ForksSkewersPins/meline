@@ -33,7 +33,7 @@ Month [+ month +] of the Year [+ year +]
 
 Finances: $[? if resources < 1000 : [+ resources +] ?][? if resources >= 1000 and resources < 1000000 : [+ resources_2 +]k ?][? if resources >= 1000000 : [+ resources_3 +]m ?]
 
-Members: [? if resources < 1000 : [+ resources +] ?][? if resources >= 1000 and resources < 1000000 : [+ resources_2 +]k ?][? if resources >= 1000000 : [+ resources_3 +]m ?]
+Members: [? if members < 1000 : [+ members +] ?][? if members >= 1000 and members < 1000000 : [+ members_2 +]k ?][? if members >= 1000000 : [+ members_3 +]m ?]
 
 Internal dissent: [+ dissent_percent : dissent +]
 
