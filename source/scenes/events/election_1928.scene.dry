@@ -322,7 +322,7 @@ Right-wing Coalition (Z + [+ bvp_name +] + DVP + Others + DNVP): [+ right_coalit
 There are some potential coalition arrangements.
 @coalition_menu
 
-- @nothing
+- @nothing: Nothing.
 
 @nothing
 
