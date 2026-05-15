@@ -41,7 +41,6 @@ Q.islands = ['meline_central', 'smogtown', 'tchotchke', 'myers', 'brickton', 'ni
 Q.classes = ['jukies', 'landlubbers', 'white_collar', 'blue_collar', 'cowjukes', 'militants', 'petty_bourgeois', 'corpo', 'police']
 
 Q.members = 0;
-
 for (var c of Q.islands) {
     Q[c+'_members'] = 0;
     for (var v of Q.classes) {

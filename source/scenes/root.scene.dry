@@ -46,6 +46,76 @@ Q.petty_bourgeois_meline_central_members = 9;
 Q.militants_meline_central_members = 1;
 Q.cowjukes_meline_central_members = 0;
 
+Q.jukies_myers_members = 0;
+Q.landlubbers_myers_members = 0;
+Q.white_collar_myers_members = 0;
+Q.blue_collar_myers_members = 0;
+Q.corpo_myers_members = 0;
+Q.police_myers_members = 0;
+Q.petty_bourgeois_myers_members = 9;
+Q.militants_myers_members = 0;
+Q.cowjukes_myers_members = 0;
+
+Q.jukies_tchotchke_members = 0;
+Q.landlubbers_tchotchke_members = 0;
+Q.white_collar_tchotchke_members = 0;
+Q.blue_collar_tchotchke_members = 0;
+Q.corpo_tchotchke_members = 0;
+Q.police_tchotchke_members = 0;
+Q.petty_bourgeois_tchotchke_members = 9;
+Q.militants_tchotchke_members = 0;
+Q.cowjukes_tchotchke_members = 0;
+
+Q.jukies_smogtown_members = 0;
+Q.landlubbers_smogtown_members = 0;
+Q.white_collar_smogtown_members = 0;
+Q.blue_collar_smogtown_members = 0;
+Q.corpo_smogtown_members = 0;
+Q.police_smogtown_members = 0;
+Q.petty_bourgeois_smogtown_members = 9;
+Q.militants_smogtown_members = 0;
+Q.cowjukes_smogtown_members = 0;
+
+Q.jukies_brickton_members = 0;
+Q.landlubbers_brickton_members = 0;
+Q.white_collar_brickton_members = 0;
+Q.blue_collar_brickton_members = 0;
+Q.corpo_brickton_members = 0;
+Q.police_brickton_members = 0;
+Q.petty_bourgeois_brickton_members = 9;
+Q.militants_brickton_members = 0;
+Q.cowjukes_brickton_members = 0;
+
+Q.jukies_meltjoy_members = 0;
+Q.landlubbers_meltjoy_members = 0;
+Q.white_collar_meltjoy_members = 0;
+Q.blue_collar_meltjoy_members = 0;
+Q.corpo_meltjoy_members = 0;
+Q.police_meltjoy_members = 0;
+Q.petty_bourgeois_meltjoy_members = 9;
+Q.militants_meltjoy_members = 0;
+Q.cowjukes_meltjoy_members = 0;
+
+Q.jukies_nilwater_members = 0;
+Q.landlubbers_nilwater_members = 0;
+Q.white_collar_nilwater_members = 0;
+Q.blue_collar_nilwater_members = 0;
+Q.corpo_nilwater_members = 0;
+Q.police_nilwater_members = 0;
+Q.petty_bourgeois_nilwater_members = 9;
+Q.militants_nilwater_members = 0;
+Q.cowjukes_nilwater_members = 0;
+
+Q.jukies_manark_members = 0;
+Q.landlubbers_manark_members = 0;
+Q.white_collar_manark_members = 0;
+Q.blue_collar_manark_members = 0;
+Q.corpo_manark_members = 0;
+Q.police_manark_members = 0;
+Q.petty_bourgeois_manark_members = 9;
+Q.militants_manark_members = 0;
+Q.cowjukes_manark_members = 0;
+
 // party resources
 Q.resources = 100;
 // party dues
