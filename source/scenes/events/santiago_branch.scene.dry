@@ -1,0 +1,30 @@
+title: Santiago & Shareholders Establishes Meline Branch
+subtitle: Yet another megacorporation sets its sights on Meline!
+new-page: true
+tags: event
+max-visits: 1
+view-if: month >= 3
+on-arrival: meline_central_antipathy += 2; meline_central_apathy -= 2; landlubbers_meline_central_members -= 4
+
+= Santiago & Shareholders Establishes Meline Branch
+
+We have just received news that the interplanetary megacorporation of Santiago & Shareholders has officially established a branch in Meline, including a pristine new office in Meline Central to act as headquarters. This comes as direct competition to Monroe Corporation's growing monopoly, though they have not made any comment.
+
+- @interesting: For sure, an interesting development.
+- @ugh: More megacorporations to the pile...
+- @optimism: I've heard they treat workers better than Monroe.
+
+@interesting
+on-arrival: white_collar_meline_central_members += 3
+
+We will have to keep our eyes on the situation to see how it develops. For now, it is not certain if this benefits us or what.
+
+@ugh
+on-arrival: blue_collar_meline_central_members += 5
+
+The arrival of more megacorporations to Meline proves the need to establish it as a planet independent of megacorporate influences. Hopefully we can manage to do so...
+
+@optimism
+on-arrival: corpo_meline_central_members += 1
+
+Really? I hadn't heard that. It wouldn't surprise me, though. Monroe did enlist the help of Fairweather with the Smogtown riots.
