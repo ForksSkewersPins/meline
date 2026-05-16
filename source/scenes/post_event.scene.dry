@@ -45,9 +45,15 @@ for (var c of Q.islands) {
     Q[c+'_members'] = 0;
     for (var v of Q.classes) {
         Q[c+'_members'] += (Q[v+'_'+c+'_members'] || 0);
-        Q[v+'_members'] += (Q[v+'_'+c+'_members'] || 0);
     }
     Q.members += Q[c+'_members'];
+}
+
+for (var c of Q.classes) {
+    Q[c+'_members'] = 0;
+    for (var v of Q.islands) {
+        Q[c+'_members'] += (Q[c+'_'+v+'_members'] || 0);
+    }
 }
 
 // 1. update dates
