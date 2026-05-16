@@ -160,15 +160,15 @@ Q.petty_bourgeois_members = 0;
 Q.militants_members = 0;
 Q.cowjukes_members = 0;
 
-Q.jukies_modifier = 0.25;
-Q.landlubbers_modifier = 0.4;
-Q.white_collar_modifier = 1;
-Q.blue_collar_modifier = 0.5;
-Q.corpo_modifier = 5;
-Q.police_modifier = 1;
-Q.petty_bourgeois_modifier = 1;
-Q.militants_modifier = 0.1;
-Q.cowjukes_modifier = 0.3;
+Q.jukies_modifier = 0.1;
+Q.landlubbers_modifier = 0.25;
+Q.white_collar_modifier = 0.75;
+Q.blue_collar_modifier = 0.3
+Q.corpo_modifier = 3;
+Q.police_modifier = 0.75;
+Q.petty_bourgeois_modifier = 0.6;
+Q.militants_modifier = 0.05;
+Q.cowjukes_modifier = 0.1;
 
 Q.expenditure = 500;
 
