@@ -45,6 +45,7 @@ for (var c of Q.islands) {
     Q[c+'_members'] = 0;
     for (var v of Q.classes) {
         Q[c+'_members'] += (Q[v+'_'+c+'_members'] || 0);
+        Q[v+'_members'] += (Q[v+'_'+c+'_members'] || 0);
     }
     Q.members += Q[c+'_members'];
 }
@@ -67,8 +68,13 @@ if (Q.month_actions >= 1) {
             Q[timer+'_timer'] -= 1;
         }
     }
+
     Q.party_luck = ((Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1));
-    Q.resources += (Q.dues*Q.members*(1+(Q.party_luck/100)));
+    for (var c of Q.classes) {
+        Q.resources += (Q.dues*Q[c+'_modifier']*Q[c+'_members']*(1+(Q.party_luck/100)));
+    }
+    Q.resources -= Q.expenditure;
+
     // append to historical party support records
     var party_support_results = {'date': new Date(Q.year, Q.month - 1)};
     // for (var party of Q.parties) {
