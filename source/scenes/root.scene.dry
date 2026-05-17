@@ -170,12 +170,25 @@ Q.petty_bourgeois_modifier = 0.6;
 Q.militants_modifier = 0.05;
 Q.cowjukes_modifier = 0.1;
 
-Q.expenditure = 400;
+Q.expenditure = 0;
+
+Q.meline_central_branch = 1;
+Q.myers_branch = 0;
+Q.tchotchke_branch = 0;
+Q.smogtown_branch = 0;
+Q.brickton_branch = 0;
+Q.meltjoy_branch = 0;
+Q.nilwater_branch = 0;
+Q.manark_branch = 0;
+
+Q.meline_central_rent = 500;
+
+Q.characters = ['Mu V.']
 
 // party resources
 Q.resources = 100;
 // party dues
-Q.dues = 2;
+Q.dues = 3;
 
 // the state of the party
 // overall dissent reduces every increase in party support.
