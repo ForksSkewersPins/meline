@@ -170,7 +170,7 @@ Q.petty_bourgeois_modifier = 0.6;
 Q.militants_modifier = 0.05;
 Q.cowjukes_modifier = 0.1;
 
-Q.expenditure = 500;
+Q.expenditure = 400;
 
 // party resources
 Q.resources = 100;
