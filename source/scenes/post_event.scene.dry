@@ -75,6 +75,13 @@ if (Q.month_actions >= 1) {
         }
     }
 
+    Q.expenditure = 0;
+    for (var i of Q.islands) {
+        if (Q[i+'_branch'] == 1) {
+            Q.expenditure += Q[i+'_rent'];
+        }
+    } 
+
     Q.party_luck = ((Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1));
     for (var c of Q.classes) {
         Q.resources += (Q.dues*Q[c+'_modifier']*Q[c+'_members']*(1+(Q.party_luck/100)));

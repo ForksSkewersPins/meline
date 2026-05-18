@@ -172,6 +172,8 @@ Q.cowjukes_modifier = 0.1;
 
 Q.expenditure = 0;
 
+Q.branches = 1;
+
 Q.meline_central_branch = 1;
 Q.myers_branch = 0;
 Q.tchotchke_branch = 0;
@@ -183,7 +185,7 @@ Q.manark_branch = 0;
 
 Q.meline_central_rent = 500;
 
-Q.characters = ['Mu V.']
+Q.characters = ['Mu V.'];
 
 // party resources
 Q.resources = 100;
