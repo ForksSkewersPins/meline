@@ -10,7 +10,7 @@ tags: party_affairs
 
 [? if branches == 1 : Our party used to have many branches before the Great Schism. Sadly, in the time since, we have been reduced to just Meline Central. ?]
 
-[? if branches > 1 : The work of rebuilding our party across Meline has started, but is far from completion. ]
+[? if branches > 1 : The work of rebuilding our party across Meline has started, but is far from completion. ?]
 
 - @meline_central: Meline Central.
 - @smogtown: Smogtown.
