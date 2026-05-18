@@ -262,17 +262,6 @@ blockquote + blockquote.attribution {
     pointer-events: none;
 }
 .doc-aged-3 {
-    clip-path: polygon(
-        0 0,
-        98% 2%,
-        100% 10%,
-        97% 50%,
-        100% 90%,
-        95% 100%,
-        0 98%
-    );
-}
-.doc-aged-4 {
     filter: grayscale(0.2) contrast(0.9);
     opacity: 0.95;
 }
