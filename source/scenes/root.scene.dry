@@ -343,6 +343,8 @@ new-page: true
 
 = Congratulations
 
+<div class="bureaucratic-document">
+
 The Meline Socialist Party Secretarial Board would like to extend its congratulations to you for your election as new party chairman following the certification of our primaries with the central committee and the board of party branches. This election process certifies through democracy the belief of the socialist movement in the capability of you to lead it forth towards the construction of a new egalitarian society, and for this, you should be proud.
 
 The keys to your office are waiting at the storage unit in Broadway Avenue, where the General Secretary is prepared to receive you at 18:00 and grant you the password. To certify this fact and assume the functions of leadership, please take care to bring this document, signed, so that it may be brought back to the party headquarters and holostamped for correct archival. In this folder is a slip of paper which contains the party programme. By signing this paper, you confirm to uphold and advance this programme, embodying it in all your functions as party leader, and to not waiver from the legal struggle for the betterment of all beings.
@@ -354,7 +356,7 @@ Sign here: <div>
         let name = document.getElementById('playerName').value.trim();
 
         if (!name) {
-            name = 'Comrade';
+            name = 'John S.';
         }
 
         name = name.replace(/[<>]/g, '');
@@ -366,4 +368,6 @@ Sign here: <div>
     ">
         Confirm
     </button>
+</div>
+
 </div>

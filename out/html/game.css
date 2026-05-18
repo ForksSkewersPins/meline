@@ -204,6 +204,24 @@ blockquote + blockquote.attribution {
   font-weight: normal;
 }
 
+.bureaucratic-document {
+    font-family: "Courier New", Courier, monospace;
+    background: linear-gradient(#f4f1e8, #eee8db);
+    border: 2px solid #444;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+    line-height: 1.4;
+    max-width: 700px;
+}
+.bureaucratic-document::before {
+    content: "OFFICIAL PARTY DOCUMENT";
+    display: block;
+    font-size: 12px;
+    opacity: 0.6;
+    margin-bottom: 10px;
+}
+
 
 /* tabs */
 .tab_container {
