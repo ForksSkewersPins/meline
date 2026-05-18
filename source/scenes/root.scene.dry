@@ -233,12 +233,12 @@ new-page: true
 
 Welcome to Meline, a planet beset by corporate exploitation, oppression and hegemony, as with most planets. Meline is unique in being utterly unimportant in the grand scheme of things, and yet still finds itself of acute interest to several megacorporations for its rarity. What will you do?
 
-- @1928_main: Begin (normal difficulty)
+- @who_are_you: Begin (normal difficulty)
 - @codex: Lore.
 
 @menu
 
-- @1928_main: Begin (normal difficulty)
+- @who_are_you: Begin (normal difficulty)
 - @codex: Lore.
 
 @1928_main
@@ -336,4 +336,43 @@ Following this ruling, the Meline Socialist Party became squarely split. Followi
 
 Since, the Meline Socialist Party has been reduced to a struggling sect among many. It is hoped that this new millenium will bode better for us.
 
-- @1928_main: Okay, got it.
+- @who_are_you: Okay, got it.
+
+@who_are_you
+new-page: true
+
+= Congratulations
+
+The Meline Socialist Party Secretarial Board would like to extend its congratulations to you for your election as new party chairman following the certification of our primaries with the central committee and the board of party branches. This election process certifies through democracy the belief of the socialist movement in the capability of you to lead it forth towards the construction of a new egalitarian society, and for this, you should be proud.
+
+The keys to your office are waiting at the storage unit in Broadway Avenue, where the General Secretary is prepared to receive you at 18:00 and grant you the password. To certify this fact and assume the functions of leadership, please take care to bring this document, signed, so that it may be brought back to the party headquarters and holostamped for correct archival. In this folder is a slip of paper which contains the party programme. By signing this paper, you confirm to uphold and advance this programme, embodying it in all your functions as party leader, and to not waiver from the legal struggle for the betterment of all beings.
+
+Sign here: <div>
+    <input type="text" id="playerName" placeholder="Your Signature">
+
+    <button onclick="setPlayerName()">
+        Confirm
+    </button>
+</div>
+
+<script>
+function setPlayerName() {
+    // Get + clean input
+    let name = document.getElementById('playerName').value.trim();
+
+    // Fallback if empty
+    if (!name) {
+        name = 'Comrade';
+    }
+
+    // Optional safety cleanup (prevents weird formatting issues)
+    name = name.replace(/[<>]/g, '');
+
+    // Store in Dendry state
+    const q = dendryUI.dendryEngine.state.qualities;
+    q.player_name = name;
+
+    // Move forward in story
+    dendryUI.advanceToScene('1928_main');
+}
+</script>
