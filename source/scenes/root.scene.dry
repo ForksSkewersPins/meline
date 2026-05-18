@@ -350,29 +350,20 @@ The keys to your office are waiting at the storage unit in Broadway Avenue, wher
 Sign here: <div>
     <input type="text" id="playerName" placeholder="Your Signature">
 
-    <button onclick="setPlayerName()">
+    <button onclick="
+        let name = document.getElementById('playerName').value.trim();
+
+        if (!name) {
+            name = 'Comrade';
+        }
+
+        name = name.replace(/[<>]/g, '');
+
+        const q = dendryUI.dendryEngine.state.qualities;
+        q.player_name = name;
+
+        dendryUI.advanceToScene('1928_main');
+    ">
         Confirm
     </button>
 </div>
-
-<script>
-function setPlayerName() {
-    // Get + clean input
-    let name = document.getElementById('playerName').value.trim();
-
-    // Fallback if empty
-    if (!name) {
-        name = 'Comrade';
-    }
-
-    // Optional safety cleanup (prevents weird formatting issues)
-    name = name.replace(/[<>]/g, '');
-
-    // Store in Dendry state
-    const q = dendryUI.dendryEngine.state.qualities;
-    q.player_name = name;
-
-    // Move forward in story
-    dendryUI.advanceToScene('1928_main');
-}
-</script>
