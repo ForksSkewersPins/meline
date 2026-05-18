@@ -350,22 +350,8 @@ The Meline Socialist Party Secretarial Board would like to extend its congratula
 The keys to your office are waiting at the storage unit in Broadway Avenue, where the General Secretary is prepared to receive you at 18:00 and grant you the password. To certify this fact and assume the functions of leadership, please take care to bring this document, signed, so that it may be brought back to the party headquarters and holostamped for correct archival. In this folder is a slip of paper which contains the party programme. By signing this paper, you confirm to uphold and advance this programme, embodying it in all your functions as party leader, and to not waiver from the legal struggle for the betterment of all beings.
 
 Sign here: <div>
-    <input type="text" id="playerName" placeholder="Your Signature">
-
-    <button onclick="
-        let name = document.getElementById('playerName').value.trim();
-
-        if (!name) {
-            name = 'John S.';
-        }
-
-        name = name.replace(/[<>]/g, '');
-
-        const q = dendryUI.dendryEngine.state.qualities;
-        q.player_name = name;
-
-        dendryUI.advanceToScene('1928_main');
-    ">
+    <input type="text" id="playerName" placeholder="Enter name">
+    <button onclick="let name=document.getElementById('playerName').value.trim();if(!name){name='John S.';}name=name.replace(/[<>]/g,'');const q=dendryUI.dendryEngine.state.qualities;q.player_name=name;dendryUI.advanceToScene('intro');">
         Confirm
     </button>
 </div>
